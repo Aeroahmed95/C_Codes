@@ -1,5 +1,5 @@
 /*
- * 0533Question2.c
+ * maxProfit.c
  *
  *  Created on: Dec 7, 2019
  *      Author: MASTER
