@@ -4,20 +4,13 @@
  *  Created on: Dec 7, 2019
  *      Author: MASTER
  */
-
 int maxProfit(int n,int p[])
 {
-	int max=0,d[n-1];
-	int l=n-1;
-	for(int i=0;i<l;i++)
-	{
-		d[i]=p[i+1]-p[i];
-	}
-	max=d[0];
-	for(int i=1;i<l;i++)
-	{
-		if(d[i]>max)max=d[i];
-	}
+	int max=0;
+	for(int i=n;i>=1;i--)
+    	for(int j=i-1;j>=0;j--)
+    	{
+    	    if((p[i]-p[j])>max)max=(p[i]-p[j]);
+    	}
 	return max;
-
 }
